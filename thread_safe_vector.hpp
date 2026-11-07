@@ -9,7 +9,7 @@ class ThreadSafeVector
 {
 public:
     void push_back(const T& value);
-    bool empty() const
+    bool empty() const;
     std::size_t size() const;
 	bool try_pop_back(T& popped_value);
 	void wait_and_pop_back(T& popped_value);
